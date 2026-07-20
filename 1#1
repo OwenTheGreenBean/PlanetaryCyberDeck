@@ -1,0 +1,52 @@
+ImportError: cannot import name 'Serial' from 'serial' (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/serial/__init__.py):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/platformio/builder/main.py", line 100:
+ImportError: cannot import name 'Serial' from 'serial' (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/serial/__init__.py):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/platformio/builder/main.py", line 100:
+    env = DefaultEnvironment(**DEFAULT_ENV_OPTIONS)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Defaults.py", line 82:
+    _default_env = SCons.Environment.Environment(*args, **kwargs)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 1249:
+    apply_tools(self, tools, toolpath)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 120:
+    _ = env.Tool(tool)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 2064:
+    tool = SCons.Tool.Tool(tool, toolpath, **kwargs)
+    env = DefaultEnvironment(**DEFAULT_ENV_OPTIONS)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Defaults.py", line 82:
+    _default_env = SCons.Environment.Environment(*args, **kwargs)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 1249:
+    apply_tools(self, tools, toolpath)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 120:
+    _ = env.Tool(tool)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Environment.py", line 2064:
+    tool = SCons.Tool.Tool(tool, toolpath, **kwargs)
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Tool/__init__.py", line 118:
+    module = self._tool_module()
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Tool/__init__.py", line 118:
+    module = self._tool_module()
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Tool/__init__.py", line 201:
+  File "/Users/obrieno/.platformio/packages/tool-scons/scons-local-4.8.1/SCons/Tool/__init__.py", line 201:
+    spec.loader.exec_module(module)
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 994:
+    
+  File "<frozen importlib._bootstrap_external>", line 994:
+    
+  File "<frozen importlib._bootstrap>", line 488:
+  File "<frozen importlib._bootstrap>", line 488:
+    
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/platformio/builder/tools/pioupload.py", line 24:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/platformio/builder/tools/pioupload.py", line 24:
+    from serial import Serial, SerialException
+    from serial import Serial, SerialException
+========================== [FAILED] Took 0.45 seconds ==========================
+========================== [FAILED] Took 0.45 seconds ==========================
+Environment             Status    Duration
+----------------------  --------  ------------
+dfrobot_beetle_esp32c3  FAILED    00:00:00.450
+Environment             Status    Duration
+----------------------  --------  ------------
+dfrobot_beetle_esp32c3  FAILED    00:00:00.450
+==================== 1 failed, 0 succeeded in 00:00:00.450 ====================
+==================== 1 failed, 0 succeeded in 00:00:00.450 ====================
